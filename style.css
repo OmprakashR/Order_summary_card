@@ -1,0 +1,183 @@
+/*Custome CSS*/
+
+:root {
+    /* 
+    ## Colors
+
+    ### Primary
+     */
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral
+     */
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Pale_blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url('./images/pattern-background-desktop.svg');
+}
+
+main {
+
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Order_card_heading h1 {
+    color: var(--Dark_blue);
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.Order_card {
+    text-align: center;
+    width: 450px;
+    max-height: 700px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.Order_card_img {
+
+    background-image: url('./images/illustration-hero.svg');
+    height: 221px;
+    border-radius: 20px 20px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.Order_card_info {
+    color: var(--Desaturated_blue);
+}
+
+.card_section {
+    padding: 40px 60px;
+}
+
+.Order_card_player {
+    background: var(--Very_pale_blue);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+.music_player {
+
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.music_profile p {
+font-size: 16px;
+    font-weight: 900;
+    color: var(--Dark_blue);
+}
+
+.music_profile span {
+    font-size: 15px;
+    color: var(--Desaturated_blue);
+}
+
+.music_change {
+    font-weight: 700;
+    text-align: right;
+    color: var(--Bright_blue);
+    font-size: 12px;
+    text-decoration: underline;
+    margin-left: 20%;
+}
+
+.Order_card_action {
+    margin-bottom: 20px;
+}
+
+.Order_card_action button {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Bright_blue);
+    transition: 0.3s all;
+    box-shadow: 0px 15px 20px 0px hsla(224.2, 23.1%, 55.1%, 0.3);
+    cursor: pointer;
+}
+
+.Order_card_action button:hover,
+.Order_card_action button:focus {
+    opacity: 0.7;
+}
+
+.Order_card_Link a {
+    margin-top: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--Desaturated_blue);
+    font-size: 15px;
+}
+
+.Order_card_Link a:hover,
+.Order_card_Link a:focus {
+    color: var(--Dark_blue);
+}
+
+.music_change a:hover,
+.music_change a:focus {
+    opacity: 0.8;
+}
+
+@media (width <=768px) {
+
+    .Order_card {
+        max-width: 350px;
+    }
+
+    .card_section {
+        padding: 20px;
+    }
+
+    body {
+
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+
+    .music_profile p {
+        font-size: 14px;
+    }
+
+    .music_profile span {
+        font-size: 12px;
+
+    }
+}
